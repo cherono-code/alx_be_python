@@ -9,5 +9,5 @@ age = int(input("How old are you? "))
 years_difference = 27
 
 #finding out future age of 2050
-future_age = input + years_difference
+future_age = age + years_difference
 print(f"In 2050, you will be {future_age} years old.")
