@@ -1,5 +1,5 @@
-print("How old are you?")
-age = int(input())
+#ask user for their age
+age = int(input(("How old are you?")))
 
 #calculate age in 2050
 current_year = 2023
