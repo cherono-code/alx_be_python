@@ -2,14 +2,12 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 def convert_to_celsius(fahrenheit):
-    # Accessing global FAHRENHEIT_TO_CELSIUS_FACTOR (read-only, no global keyword needed)
-    new_temp = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-    return new_temp
+    # Accessing global FAHRENHEIT_TO_CELSIUS_FACTOR (read-only)
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
-    # Accessing global CELSIUS_TO_FAHRENHEIT_FACTOR (read-only, no global keyword needed)
-    new_temp = celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
-    return new_temp
+    # Accessing global CELSIUS_TO_FAHRENHEIT_FACTOR (read-only)
+    return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
 
 try:
     temperature = float(input("Enter the temperature to convert: "))
