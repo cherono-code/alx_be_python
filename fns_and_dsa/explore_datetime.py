@@ -2,13 +2,13 @@ from datetime import datetime, timedelta
 def display_current_datetime():
     """Display the current date and time."""
     current_date = datetime.now()
-    print("Current date and time:", current_date.strftime("%Y-%m-%d"))
+    print("Current date and time:", current_date.strftime("%Y-%m-%d %H:%M:%S"))
     return current_date
 
 def calculate_future_date(current_date, days):
     """Calculate the date after adding a certain number of days to the current date."""
     future_date = current_date + timedelta(days=days)
-    print("Future date:", future_date.strftime("%Y-%m-%d"))
+    print("Future date:", future_date.strftime("%Y-%m-%d %H:%M:%S"))
     return future_date
 
 def main():
