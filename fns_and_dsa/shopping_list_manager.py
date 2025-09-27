@@ -23,7 +23,6 @@ def main():
                 pass
         elif choice == '3':
             # Display the shopping list
-            for item in shopping_list: 
                 print("Shopping List: ", shopping_list)   
                 pass
         elif choice == '4':
